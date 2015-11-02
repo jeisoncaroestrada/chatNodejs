@@ -25,7 +25,7 @@ server.get('/:img', function (req, res){
   }
 });
 
-http.createServer(server).listen(process.env.PORT || 5000, function (){
+http.createServer(server).listen(process.env.PORT || 1000, function (){
   console.log('Servidor disponible en %d', this.address().port);
   websockets(this, cache);
 });
